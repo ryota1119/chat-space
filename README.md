@@ -32,17 +32,17 @@ Things you may want to cover:
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
-- has_many :message
+- has_many :messages
 - has_many :groups_users
 - has_many :groups, through: :groups_users
 
 ## messagesテーブル
 |Column|Type|Opution|
 |------|----|-------|
-|text|text|null :false|
+|text|text||
 |image_url|string||
-|user_id|integer|null: false, foreign_key|
-|group_id|integer|null: false, foreign_key|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
