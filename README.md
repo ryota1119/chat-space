@@ -28,7 +28,7 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Opution|
 |------|----|-------|
-|mail|string|num: fasle|
+|mail|string|null: fasle|
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
@@ -50,7 +50,7 @@ Things you may want to cover:
 ## groupsテーブル
 |Column|Type|Opution|
 |------|----|-------|
-|name|string|nill: false|
+|name|string|null: false|
 ### Association
 - has_many :groups_users
 - has_many :users, through: :groups_users
