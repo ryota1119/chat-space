@@ -41,6 +41,8 @@ Things you may want to cover:
 |------|----|-------|
 |text|text|null :false|
 |user_id|integer|null: false, foreign_key|
+|group_id|integer|null: false, foreign_key|
+
 ### Association
 - belongs_to :user
 - belongs_to :group
@@ -50,9 +52,9 @@ Things you may want to cover:
 |------|----|-------|
 |name|string|nill: false|
 ### Association
+- has_many :groups_users
 - has_many :users, through: :groups_users
 - has_many :messages
-- has_many :groups_users
 
 ## groups_usersテーブル
 |Column|Type|Options|
