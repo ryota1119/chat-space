@@ -10,6 +10,29 @@
   &__user-name {
     background-color: #253141;
     height: 100px;
+    display: flex;
+    align-items: center;
+    .top-items {
+      height: 20px;
+      width: calc(100% - 40px);
+      font-size: 16px;
+      margin: 0 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      line-height: 20px;
+      &__name {
+      }
+      &__icons {
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        &--icon {
+          color: #ffffff;
+          padding-left: 5px;
+        }
+      }
+    }
   }
   &__group-list {
     background-color: #2f3e51;
