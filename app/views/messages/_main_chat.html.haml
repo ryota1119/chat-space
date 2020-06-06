@@ -1,4 +1,14 @@
 .main-chat
-  .main-chat__group-info
+  .group-info
+    .group-info__group
+      %h2.group-info__group__name
+        友達
+      %ul.group-info__group__member-list
+        Member：
+        %li.group-info__group__member-list__member
+          ryota1119
+    .group-info__edit
+      = link_to "#", class: "group-info__edit--btn" do
+        edit
   .main-chat__message-list
   .main-chat__message-form
