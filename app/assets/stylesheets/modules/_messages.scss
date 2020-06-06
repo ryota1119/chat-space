@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  color: #ffffff;
+  font-weight: bold;
 }
 .wrapper {
   display: flex;
@@ -22,6 +24,7 @@
       justify-content: space-between;
       line-height: 20px;
       &__name {
+        font-size: 16px;
       }
       &__icons {
         width: 60px;
@@ -37,6 +40,18 @@
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    padding: 20px;
+    .group {
+      width: 100%;
+      &__name {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &__message {
+        font-size: 11px;
+        margin-bottom: 40px;
+      }
+    }
   }
 }
 
