@@ -28,9 +28,9 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Opution|
 |------|----|-------|
+|name|string|null: false|
 |mail|string|null: fasle|
 |password|string|null: false|
-|nickname|string|null: false|
 ### Association
 - has_many :messages
 - has_many :groups_users
