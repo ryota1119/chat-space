@@ -1,0 +1,50 @@
+.main-chat
+  .group-info
+    .group-info__group
+      %h2.group-info__group__name
+        友達
+      %ul.group-info__group__member-list
+        Member：
+        %li.group-info__group__member-list__member
+          ryota1119
+    .group-info__edit
+      = link_to "#", class: "group-info__edit--btn" do
+        edit
+  .message-list
+    .message
+      .message__info
+        .message__info__user-name
+          ryota1119
+        .message__info__time
+          2020/06/06(thu) 16:00:01
+      .message__text
+        友達
+      .message__info
+        .message__info__user-name
+          ryota1119
+        .message__info__time
+          2020/06/06(thu) 16:00:01
+      .message__text
+        友達
+      .message__info
+        .message__info__user-name
+          ryota1119
+        .message__info__time
+          2020/06/06(thu) 16:00:01
+      .message__text
+        友達
+      .message__info
+        .message__info__user-name
+          ryota1119
+        .message__info__time
+          2020/06/06(thu) 16:00:01
+      .message__text
+        友達
+  .message-form
+    %form.new-message
+      .input-box
+        %input{type: "text",class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "new-message__submit"}
