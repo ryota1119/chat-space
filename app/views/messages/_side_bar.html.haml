@@ -9,33 +9,10 @@
         = link_to edit_user_path(current_user), class: "top-items__icons--icon" do
           %li= icon('fas', 'cog')
   .side-bar__group-list
-    .group
-      = link_to "#" do
-        %p.group__name
-          友達
-      %p.group__message
-        まだメッセージがありません。
-    .group
-      = link_to "#" do
-        %p.group__name
-          友達
-      %p.group__message
-        まだメッセージがありません。
-    .group
-      = link_to "#" do
-        %p.group__name
-          友達
-      %p.group__message
-        まだメッセージがありません。
-    .group
-      = link_to "#" do
-        %p.group__name
-          友達
-      %p.group__message
-        まだメッセージがありません。
-    .group
-      = link_to "#" do
-        %p.group__name
-          友達
-      %p.group__message
-        まだメッセージがありません。
+    - current_user.groups.each do |group|
+      .group
+        = link_to "#", class: "group--link" do
+          %p.group__name
+            = group.name
+          %p.group__message
+            メッセージはまだありません。
