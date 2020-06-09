@@ -1,8 +1,10 @@
 = form_for group do |f|
-  .chat-group-form__errors
-    %h2 10件のエラーが発生しました
-    %ul
-      %li nameを入力してください
+  - if group.errors.any?
+    .chat-group-form__errors
+      %h2= "#{group.error.full_message.count}件のエラーが発生しました。"
+      %ul
+        - group.error.full_message.each do |message|
+          %li= messasge
   .chat-group-form__field
     .chat-group-form__field--left
       = f.label :name, class: 'chat-group-form__label'
