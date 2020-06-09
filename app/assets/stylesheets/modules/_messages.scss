@@ -48,6 +48,9 @@ $side-bar-color: #ffffff;
     padding: 20px;
     .group {
       width: 100%;
+      &--link {
+        text-decoration: none;
+      }
       &__name {
         font-size: 15px;
         margin-bottom: 5px;
