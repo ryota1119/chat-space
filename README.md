@@ -40,9 +40,9 @@ Things you may want to cover:
 |Column|Type|Opution|
 |------|----|-------|
 |content|string||
-|image_url|string||
-|user_id|references|null: false, foreign_key: true|
-|group_id|references|null: false, foreign_key: true|
+|image|string||
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
 - belongs_to :group
