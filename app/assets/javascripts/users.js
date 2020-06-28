@@ -40,4 +40,8 @@ $(function() {
       alert("通信エラーです。ユーザーが表示できません。")
     });
   });
+
+  $("#user-search-result").on('click', ".chat-group-user__btn--add", function() {
+    console.log("確認")
+  });
 });
