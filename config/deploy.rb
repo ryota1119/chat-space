@@ -33,12 +33,12 @@ set :keep_releases, 5
 #   end
 # end
 
-set :default_en, {
-  rbenv_root: "/user/local/rbenv",
-  path: "/user/local/rbenv/shims:/user/local/rbenv/bin:$PATH",
-  AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
-  AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"]
-}
+# set :default_en, {
+#   rbenv_root: "/user/local/rbenv",
+#   path: "/user/local/rbenv/shims:/user/local/rbenv/bin:$PATH",
+#   AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
+#   AWS_SECRET_ACCESS_KEY: ENV["AWS_SECRET_ACCESS_KEY"]
+# }
 
 # secrets.yml用のシンボリックリンクを追加
 set :linked_files, %w{ config/secrets.yml }
