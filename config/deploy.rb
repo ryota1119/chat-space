@@ -48,7 +48,7 @@ namespace :deploy do
   after :finishing, 'deploy:cleanup'
 end
 
-set :default_en, {
+ser :default_en, {
   rbenv_root: "/user/local/rbenv",
   path: "/user/local/rbenv/shims:/user/local/rbenv/bin:$PATH",
   AWS_ACCESS_KEY_ID: ENV["AWS_ACCESS_KEY_ID"],
